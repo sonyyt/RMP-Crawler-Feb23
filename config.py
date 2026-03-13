@@ -65,6 +65,19 @@ PROFESSORS_FINAL_V2_FILE = DATA_DIR / "professors_final_v2.json"
 PROFESSORS_FINAL_V2_CSV = DATA_DIR / "professors_final_v2.csv"
 PROFESSORS_EXCLUDED_FILE = DATA_DIR / "professors_excluded.json"
 
+# ── Phase 4: Review crawling ──────────────────────────────────────────────────
+PROFESSORS_FILTERED_CSV = DATA_DIR / "professors_filtered.csv"
+REVIEWS_DIR = DATA_DIR / "reviews"
+REVIEWS_ALL_FILE = REVIEWS_DIR / "all_reviews.csv"
+REVIEWS_CRAWL_SUMMARY = REVIEWS_DIR / "crawl_summary.csv"
+
+# Minimum reviews per period to include a professor in analysis
+MIN_REVIEWS_PER_PERIOD: int = int(os.getenv("RMP_MIN_REVIEWS_PERIOD", "3"))
+
+# ── Phase 5: Analysis ─────────────────────────────────────────────────────────
+ANALYSIS_DIR = DATA_DIR / "analysis"
+ANALYSIS_PLOTS_DIR = ANALYSIS_DIR / "plots"
+
 # ── Logging ────────────────────────────────────────────────────────────────────
 LOG_FILE = LOG_DIR / "pipeline.log"
 LOG_LEVEL: str = os.getenv("RMP_LOG_LEVEL", "INFO")
