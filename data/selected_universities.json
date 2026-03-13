@@ -1,0 +1,502 @@
+[
+  {
+    "name": "University of Texas at Arlington",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Rice University",
+    "state": "TX",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Kent State University",
+    "state": "OH",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Dartmouth College",
+    "state": "NH",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Tufts University",
+    "state": "MA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Florida State University",
+    "state": "FL",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Houston",
+    "state": "TX",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Utah",
+    "state": "UT",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Middle Tennessee State University",
+    "state": "TN",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Emory University",
+    "state": "GA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Carnegie Mellon University",
+    "state": "PA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Arizona State University",
+    "state": "AZ",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Massachusetts Amherst",
+    "state": "MA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Massachusetts Boston",
+    "state": "MA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of the Pacific",
+    "state": "CA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Notre Dame",
+    "state": "IN",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Delaware",
+    "state": "DE",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Arkansas at Little Rock",
+    "state": "AR",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Boston University",
+    "state": "MA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Villanova University",
+    "state": "PA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Western Michigan University",
+    "state": "MI",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Yale University",
+    "state": "CT",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of South Carolina",
+    "state": "SC",
+    "carnegie": "R1"
+  },
+  {
+    "name": "California State University Sacramento",
+    "state": "CA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Virginia Commonwealth University",
+    "state": "VA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Chapman University",
+    "state": "CA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Kansas",
+    "state": "KS",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Texas at San Antonio",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Emporia State University",
+    "state": "KS",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Gonzaga University",
+    "state": "WA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Virginia Tech",
+    "state": "VA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of California, Riverside",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of California, Santa Barbara",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Pittsburgh",
+    "state": "PA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of California, Irvine",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Maryland Baltimore County",
+    "state": "MD",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Florida Gulf Coast University",
+    "state": "FL",
+    "carnegie": "R2"
+  },
+  {
+    "name": "George Mason University",
+    "state": "VA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Hawaii at Manoa",
+    "state": "HI",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Alabama at Birmingham",
+    "state": "AL",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Texas Southern University",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Vanderbilt University",
+    "state": "TN",
+    "carnegie": "R1"
+  },
+  {
+    "name": "East Carolina University",
+    "state": "NC",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Clark University",
+    "state": "MA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Cincinnati",
+    "state": "OH",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Indiana University",
+    "state": "IN",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Catholic University of America",
+    "state": "DC",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of California, Berkeley",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Wayne State University",
+    "state": "MI",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Central Florida",
+    "state": "FL",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Central Arkansas",
+    "state": "AR",
+    "carnegie": "R2"
+  },
+  {
+    "name": "South Dakota State University",
+    "state": "SD",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of North Dakota",
+    "state": "ND",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Jackson State University",
+    "state": "MS",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Morgan State University",
+    "state": "MD",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Washington State University",
+    "state": "WA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "New Mexico State University",
+    "state": "NM",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Florida Institute of Technology",
+    "state": "FL",
+    "carnegie": "R2"
+  },
+  {
+    "name": "New York University",
+    "state": "NY",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Sacred Heart University",
+    "state": "CT",
+    "carnegie": "R2"
+  },
+  {
+    "name": "DePaul University",
+    "state": "IL",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of North Texas",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Portland",
+    "state": "OR",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Florida International University",
+    "state": "FL",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Hofstra University",
+    "state": "NY",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Oklahoma",
+    "state": "OK",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of California, Santa Cruz",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Idaho State University",
+    "state": "ID",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Western Washington University",
+    "state": "WA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Boston College",
+    "state": "MA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Nebraska Medical Center",
+    "state": "NE",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Howard University",
+    "state": "DC",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Missouri",
+    "state": "MO",
+    "carnegie": "R1"
+  },
+  {
+    "name": "George Washington University",
+    "state": "DC",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Maryland College Park",
+    "state": "MD",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Texas at Dallas",
+    "state": "TX",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Illinois at Chicago",
+    "state": "IL",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Mississippi",
+    "state": "MS",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of West Florida",
+    "state": "FL",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Nebraska Omaha",
+    "state": "NE",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Missouri University of Science and Technology",
+    "state": "MO",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Southern California",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Montana",
+    "state": "MT",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Lamar University",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Colorado State University",
+    "state": "CO",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Memphis",
+    "state": "TN",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Quinnipiac University",
+    "state": "CT",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Louisiana State University",
+    "state": "LA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Fairfield University",
+    "state": "CT",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Worcester Polytechnic Institute",
+    "state": "MA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Prairie View A&M University",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "Mississippi State University",
+    "state": "MS",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Creighton University",
+    "state": "NE",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of Louisiana at Lafayette",
+    "state": "LA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "California Institute of Technology",
+    "state": "CA",
+    "carnegie": "R1"
+  },
+  {
+    "name": "University of Texas at El Paso",
+    "state": "TX",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of New Orleans",
+    "state": "LA",
+    "carnegie": "R2"
+  },
+  {
+    "name": "University of North Carolina at Chapel Hill",
+    "state": "NC",
+    "carnegie": "R1"
+  },
+  {
+    "name": "Georgetown University",
+    "state": "DC",
+    "carnegie": "R1"
+  },
+  {
+    "name": "East Tennessee State University",
+    "state": "TN",
+    "carnegie": "R2"
+  }
+]
