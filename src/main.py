@@ -5,10 +5,13 @@ Usage:
   python src/main.py                  # run all phases
   python src/main.py --phase 1        # university selection only
   python src/main.py --phase 2        # RMP crawl only
-  python src/main.py --phase 3        # tenure estimation (v2: Google + LLM)
+  python src/main.py --phase 3        # tenure estimation (v2: OpenAI web search)
   python src/main.py --phase 3 --validate  # validate on first 100 professors
+  python src/main.py --phase 4        # scrape individual RMP reviews
+  python src/main.py --phase 5        # build analysis dataset (sentiment etc.)
+  python src/main.py --phase 6        # EDA, hypothesis tests, plots
   python src/main.py --resume         # skip already-processed items
-  python src/main.py --phase 2 --resume
+  python src/main.py --phase 4 --resume
 """
 
 from __future__ import annotations
@@ -67,6 +70,30 @@ def phase2(resume: bool = False) -> list[dict]:
     return professors
 
 
+def phase4(resume: bool = False) -> None:
+    from src.review_scraper import scrape_all_professors
+    log = logging.getLogger("phase4")
+    log.info("═══ Phase 4: Review scraping ═══")
+    scrape_all_professors(resume=resume)
+    log.info("Done.")
+
+
+def phase5() -> None:
+    from src.analysis import build_analysis_dataset
+    log = logging.getLogger("phase5")
+    log.info("═══ Phase 5: Build analysis dataset ═══")
+    df = build_analysis_dataset()
+    log.info("Done. %d rows in processed dataset.", len(df))
+
+
+def phase6() -> None:
+    from src.eda import run_eda
+    log = logging.getLogger("phase6")
+    log.info("═══ Phase 6: EDA + hypothesis testing ═══")
+    run_eda()
+    log.info("Done.")
+
+
 def phase3(resume: bool = False, validate: bool = False) -> list[dict]:
     from src.tenure_estimator_v2 import estimate_tenure_for_all
     log = logging.getLogger("phase3")
@@ -102,9 +129,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--phase",
         type=int,
-        choices=[1, 2, 3],
+        choices=[1, 2, 3, 4, 5, 6],
         default=None,
-        help="Run only this phase (1, 2, or 3). Omit to run all phases.",
+        help="Run only this phase (1–6). Omit to run all phases.",
     )
     parser.add_argument(
         "--resume",
@@ -138,6 +165,12 @@ def main() -> None:
         phase2(resume=args.resume)
     if args.phase is None or args.phase == 3:
         phase3(resume=args.resume, validate=args.validate)
+    if args.phase is None or args.phase == 4:
+        phase4(resume=args.resume)
+    if args.phase is None or args.phase == 5:
+        phase5()
+    if args.phase is None or args.phase == 6:
+        phase6()
 
     if args.phase is None:
         log.info("All phases complete.")

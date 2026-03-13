@@ -1,0 +1,27 @@
+======================================================================
+RMP PROFESSOR TENURE ANALYSIS — FINDINGS SUMMARY
+======================================================================
+
+Dataset: 2,135 reviews across 116 professors
+Pre-tenure reviews:  1,021
+Post-tenure reviews: 1,114
+
+── Pre vs. Post Tenure (Welch t-test) ──────────────────────────────
+  Overall Rating         pre=3.768  post=3.486  Δ=-0.282  p=0.0000 ***  d=0.176
+  Difficulty             pre=3.209  post=3.384  Δ=+0.176  p=0.0007 ***  d=-0.147
+  Sentiment              pre=0.440  post=0.384  Δ=-0.056  p=0.0304 *  d=0.094
+  Would Take Again       pre=0.751  post=0.844  Δ=+0.092  p=0.0000 ***  d=-0.231
+
+── Within-professor regression (metric ~ relative_year + FE) ───────
+  overall_rating         coef=-0.03067  p=0.0018 **  (n=2135)
+  difficulty             coef=+0.02378  p=0.0013 **  (n=2135)
+  sentiment              coef=-0.00432  p=0.2855 ns  (n=2134)
+
+── Hypotheses suggested by data ─────────────────────────────────────
+
+  H: Overall Rating decreases after tenure (Δ=-0.282, d=0.176, p=0.0000)
+  H: Difficulty increases after tenure (Δ=+0.176, d=-0.147, p=0.0007)
+  H: Sentiment shows no significant change after tenure (p=0.0304, insufficient effect size)
+  H: Would Take Again increases after tenure (Δ=+0.092, d=-0.231, p=0.0000)
+
+======================================================================
