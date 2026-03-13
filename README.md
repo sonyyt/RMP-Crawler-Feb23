@@ -23,12 +23,11 @@ The pipeline runs in three phases:
 
 ### Phase 3 — Tenure Year Estimation
 - Targets likely tenured professors (Associate Professor / Full Professor rank)
-- Searches multiple public sources per professor:
-  1. University faculty page (`site:[university].edu`)
-  2. Public CV (Google `filetype:pdf`)
-  3. LinkedIn snippet
-  4. General Google search
-- Extracts tenure year using pattern matching with a confidence score (0–1):
+- Uses the **OpenAI Responses API** with the `web_search_preview` tool — no Google CSE required
+- Two-stage design to minimize API costs (~300 web searches vs ~4,700 in a naive approach):
+  1. **Stage 1** — one web search per university: fetches the full CS/related faculty list and identifies which professors are tenured (Associate or Full Professor)
+  2. **Stage 2** — one web search per confirmed tenured professor: finds their specific tenure year
+- Results are structured JSON extracted by the model with a confidence score (0–1):
 
   | Signal | Example | Confidence |
   |--------|---------|------------|
@@ -87,10 +86,17 @@ RMP_Crawler_Feb23/
 pip install -r requirements.txt
 ```
 
-Configure `config.py`:
+Create a `.env` file in the project root (never commit this):
+
+```bash
+OPENAI_API_KEY=your-openai-api-key-here
+OPENAI_MODEL=gpt-4o-mini   # optional, defaults to gpt-4o-mini
+```
+
+Other settings in `config.py`:
 - `RANDOM_SEED` — for reproducible university sampling (default: `42`)
-- `GOOGLE_API_KEY` / `GOOGLE_CSE_ID` — for Google Custom Search in Phase 3
 - `MIN_RATINGS` — minimum RMP ratings threshold (default: `40`)
+- `MIN_CONFIDENCE` — minimum confidence to include in final output (default: `0.35`)
 
 ---
 
@@ -112,7 +118,7 @@ python src/main.py
 | HTTP requests | `requests` |
 | HTML parsing | `beautifulsoup4` + `lxml` |
 | Data manipulation | `pandas` |
-| Search integration | `google-api-python-client` |
+| Web search + extraction | OpenAI Responses API (`web_search_preview`) |
 | Rate limiting | `time.sleep` with random jitter |
 | Checkpointing | JSON append-on-success |
 
